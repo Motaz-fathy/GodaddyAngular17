@@ -1,0 +1,177 @@
+<div class="w-full flex flex-col items-center text-center">
+  <span class="text-3xl w-full text-center my-10 font-bold">
+    What's first up for your business?
+  </span>
+  <div class="flex justify-center items-center w-full gap-4 mb-5">
+    <span
+      (click)="setActive(0)"
+      class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer"
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 0 } "
+      >Domains</span
+    >
+
+    <span
+      (click)="setActive(1)"
+      class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer"
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 1 } "
+
+      >Recommended</span
+    >
+
+    <span
+      (click)="setActive(2)"
+      class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer"
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 2 } "
+
+      >WordPress and Security</span
+    >
+  </div>
+
+
+  <div
+    *ngIf="active === 0"
+    class="w-full flex justify-center gap-8 items-center max-md:flex-col px-4"
+  >
+    <div
+      class="relative max-md:w-full w-1/2 domain1 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+    >
+      <div
+        class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+      >
+        <span class="text-xl font-bold">Domains</span>
+        <span class="text-start h-auto text-sm"
+          >Get started with the perfect domain, which comes with free domain
+          privacy protection forever.</span
+        >
+        <span
+          class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          >Search Domains</span
+        >
+      </div>
+    </div>
+
+    <div
+      class="relative max-md:w-full w-1/2 domain2 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+    >
+      <div
+        class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+      >
+        <span class="text-xl font-bold">.co for ‪570.95 EGP‬/1st year</span>
+        <span class="text-start h-auto text-sm"
+          >Ensure your company and website stand out with a .co domain.</span
+        >
+        <span
+          class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          >Get Started</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="active === 1"
+    class="w-full flex justify-center gap-8 items-center max-md:flex-col px-4"
+  >
+    <div
+      class="relative max-md:w-full w-1/2 recomm1 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+    >
+      <div
+        class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+      >
+        <span class="text-xl font-bold text-start"
+          >Professional Email 94.77 EGP per user/mo</span
+        >
+        <span class="text-start h-auto text-sm"
+          >Earn trust from your customers with an email address that matches
+          your domain.</span
+        >
+        <span
+          class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          >Get Started</span
+        >
+      </div>
+    </div>
+
+    <div
+      class="max-md:w-full w-1/2 h-[700px] flex flex-col items-center gap-8 max-md:flex-col"
+    >
+      <div
+        class="relative flex flex-col items-start py-4 gap-2 w-full recomm2 h-[350px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+      >
+        <div
+          class="absolute bottom-0 left-2 flex flex-col items-start py-4 gap-2 w-2/6"
+        >
+          <span class="text-xl font-bold text-start"
+            >Websites 523.34 EGP/mo</span
+          >
+          <span class="text-start h-auto text-sm"
+            >Start for free and quickly design a beautiful, mobile-friendly
+            site.</span
+          >
+          <span
+            class="bg-gray-800 px-4 py-2 text-xs rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+            >Create Your Site</span
+          >
+        </div>
+      </div>
+      <div
+        class="relative w-full recomm3 h-[350px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+      >
+        <div
+          class="absolute bottom-0 left-2 flex flex-col items-start py-4 gap-2 w-2/6"
+        >
+          <span class="text-xl font-bold text-start"
+            >Web Hosting 332.86 EGP/mo</span
+          >
+          <span class="text-start h-auto text-sm"
+            >Get fast load times and 99.9% uptime guaranteed.***</span
+          >
+          <span
+            class="bg-gray-800 px-4 py-2 rounded-lg text-xs text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+            >View Plans and Pricing</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+  *ngIf="active === 2"
+  class="w-full flex justify-center gap-8 items-center max-md:flex-col px-4"
+  >
+  <div
+  class="relative max-md:w-full w-1/2 wordpress1 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+>
+  <div
+    class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+  >
+    <span class="text-xl font-bold">WordPress 523.34 EGP/mo</span>
+    <span class="text-start h-auto text-sm"
+      >Let AI quickly build a fully-managed website that's always up to date, with no worries.</span
+    >
+    <span
+      class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+      >Explore WordPress Plans</span
+    >
+  </div>
+</div>
+
+<div
+  class="relative max-md:w-full w-1/2 wordpress2 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+>
+  <div
+    class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+  >
+    <span class="text-xl font-bold">SSL Certificates 3,332.86 EGP/yr</span>
+    <span class="text-start h-auto text-sm"
+      >Help keep sensitive data secure on your site and boost search ranking with an SSL Certificate.</span
+    >
+    <span
+      class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+      >Secure Your Data</span
+    >
+  </div>
+</div>
+  </div>
+
+</div>

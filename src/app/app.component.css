@@ -1,0 +1,184 @@
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  margin: auto;
+  font-size: 0.7rem; /* Increased font size for better readability */
+  background-color: #282627;
+  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav .logo .fa-gofore{
+  font-size: 1.5rem;
+}
+
+nav .menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .midd-items, nav .end-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  list-style: none;
+}
+nav .midd-items li, nav .end-items li{
+  cursor: pointer;
+  padding: 10px 10px ;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all ease-in-out 0.3s;
+}
+.active{
+  background-color: #e9e7e8;
+  color: black;
+}
+.fa-cart-shopping{
+  font-size: 1.2rem;
+}
+nav .end-items {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .midd-items, nav .end-items {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav .midd-items.open, nav .end-items.open {
+    display: flex;
+  }
+
+  nav .end-items {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo h1, nav .midd-items h2, nav .end-items h2 {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  nav .logo i, nav .midd-items i, nav .end-items i {
+    font-size: 1rem; /* Adjust icon size for smaller screens */
+  }
+}
+
+/* Add your existing styles here */
+
+.domain-dropdown {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 40px ;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 80px; /* Adjust based on your nav height */
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: 150px;
+  
+}
+
+.web-dropdown {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 40px ;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 80px; /* Adjust based on your nav height */
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: 150px;
+}
+.Security-dropdown{
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 40px ;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 80px; /* Adjust based on your nav height */
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: 150px;
+}
+.Marketing-dropdown{
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 40px ;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 80px; /* Adjust based on your nav height */
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: 150px;
+}
+.Help-dropdown{
+
+  border: 1px solid #ccc;
+}
+.dropdown-column {
+  width: 30%;
+}
+
+.dropdown-column h3 {
+  margin-bottom: 0.5em;
+}
+
+.dropdown-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.nav-blur {
+  filter: blur(4px);
+}
+
+.midd-items, .end-items {
+  display: flex;
+  list-style: none;
+}
+
+.midd-items li, .end-items li {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.midd-items.open li, .end-items.open li {
+  display: block;
+}
+

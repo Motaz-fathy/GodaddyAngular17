@@ -1,0 +1,38 @@
+.domain1{
+  background-image: url('../../../public/domain1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.domain2{
+  background-image: url('../../../public/domain2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recomm1{
+  background-image: url('../../../public/recomm1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recomm2{
+  background-image: url('../../../public/recomm2.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.recomm3{
+  background-image: url('../../../public/recomm3.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.wordpress1{
+  background-image: url('../../../public/wrodpress1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wordpress2{
+  background-image: url('../../../public/wrodpress2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
