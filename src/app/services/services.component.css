@@ -1,0 +1,17 @@
+.serv1{
+  background-image: url('../../../public/serv1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.serv2{
+  background-image: url('../../../public/serv2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.serv3{
+  background-image: url('../../../public/serv3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

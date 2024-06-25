@@ -1,3 +1,60 @@
 <div class="w-full flex flex-col items-center my-10">
-  <span class="w-full text-4xl font-bold  text-center">Grow your brand with Websites + Marketing.</span>
+  <span class="w-full text-4xl font-bold text-center"
+    >Grow your brand with Websites + Marketing.</span
+  >
+  <div
+    class="px-4 rounded-2xl h-[500px] w-full mt-5"
+    [ngClass]="{
+      ' serv1': active === 0,
+      serv2: active === 1,
+      serv3: active === 2
+    }"
+  ></div>
+
+  <div
+    class="flex w-full justify-center items-center gap-4 max-md:flex-col mt-5"
+  >
+    <div
+      (mouseenter)="changeServe(0)"
+      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{'bg-gray-200' : active === 0}"
+    >
+      <span class="text-lg font-bold"
+        >Get online fast. No design skills needed.</span
+      >
+      <p class="text-sm">
+        Build your site in minutes. Choose from 100s of beautiful,
+        mobile-friendly templates with our Website Builder, many with ecommerce
+        features.
+      </p>
+    </div>
+
+    <div
+      (mouseenter)="changeServe(1)"
+      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{'bg-gray-200' : active === 1}"
+
+    >
+      <span class="text-lg font-bold"
+        >Build trust with email that matches your domain.</span
+      >
+      <p class="text-sm">
+        Help boost your credibility with customers with free Professional Email
+        that’s identical to your domain name.
+      </p>
+    </div>
+
+    <div
+      (mouseenter)="changeServe(2)"
+      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{'bg-gray-200' : active === 2}"
+
+    >
+      <span class="text-lg font-bold">Engage with marketing tools.</span>
+      <p class="text-sm">
+        Help your audience find you with built-in SEO and promote your business
+        with social media and email marketing tools.
+      </p>
+    </div>
+  </div>
 </div>

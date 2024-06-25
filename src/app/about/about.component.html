@@ -2,31 +2,28 @@
   <span class="text-4xl w-full text-center my-10 font-bold">
     What's first up for your business?
   </span>
-  <div class="flex justify-center items-center w-full gap-4 mb-5 max-md:gap-1 ">
+  <div class="flex justify-center items-center w-full gap-4 mb-5 max-md:gap-1">
     <span
       (click)="setActive(0)"
       class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer max-md:text-xs"
-      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 0 } "
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 0 }"
       >Domains</span
     >
 
     <span
       (click)="setActive(1)"
       class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer max-md:text-xs"
-      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 1 } "
-
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 1 }"
       >Recommended</span
     >
 
     <span
       (click)="setActive(2)"
-      class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2  cursor-pointer max-md:text-xs"
-      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 2 } "
-
+      class="bg-gray-100 rounded-full border-[2px] border-gray-800 px-4 py-2 cursor-pointer max-md:text-xs"
+      [ngClass]="{ 'bg-gray-800 text-white shadow-lg': active === 2 }"
       >WordPress and Security</span
     >
   </div>
-
 
   <div
     *ngIf="active === 0"
@@ -127,7 +124,7 @@
             >Get fast load times and 99.9% uptime guaranteed.***</span
           >
           <span
-            class="bg-gray-800 px-4 py-2 rounded-lg text-xs text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+            class="bg-gray-800 px-2 py-2 rounded-lg text-xs text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
             >View Plans and Pricing</span
           >
         </div>
@@ -136,42 +133,43 @@
   </div>
 
   <div
-  *ngIf="active === 2"
-  class="w-full flex justify-center gap-8 items-center max-md:flex-col px-4"
+    *ngIf="active === 2"
+    class="w-full flex justify-center gap-8 items-center max-md:flex-col px-4"
   >
-  <div
-  class="relative max-md:w-full w-1/2 wordpress1 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
->
-  <div
-    class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
-  >
-    <span class="text-xl font-bold">WordPress 523.34 EGP/mo</span>
-    <span class="text-start h-auto text-sm"
-      >Let AI quickly build a fully-managed website that's always up to date, with no worries.</span
+    <div
+      class="relative max-md:w-full w-1/2 wordpress1 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
     >
-    <span
-      class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
-      >Explore WordPress Plans</span
-    >
-  </div>
-</div>
+      <div
+        class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+      >
+        <span class="text-xl font-bold">WordPress 523.34 EGP/mo</span>
+        <span class="text-start h-auto text-sm"
+          >Let AI quickly build a fully-managed website that's always up to
+          date, with no worries.</span
+        >
+        <span
+          class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          >Explore WordPress Plans</span
+        >
+      </div>
+    </div>
 
-<div
-  class="relative max-md:w-full w-1/2 wordpress2 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
->
-  <div
-    class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
-  >
-    <span class="text-xl font-bold">SSL Certificates 3,332.86 EGP/yr</span>
-    <span class="text-start h-auto text-sm"
-      >Help keep sensitive data secure on your site and boost search ranking with an SSL Certificate.</span
+    <div
+      class="relative max-md:w-full w-1/2 wordpress2 h-[700px] rounded-2xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
     >
-    <span
-      class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
-      >Secure Your Data</span
-    >
+      <div
+        class="absolute bottom-0 left-5 flex flex-col items-start py-4 gap-2 w-2/3"
+      >
+        <span class="text-xl font-bold">SSL Certificates 3,332.86 EGP/yr</span>
+        <span class="text-start h-auto text-sm"
+          >Help keep sensitive data secure on your site and boost search ranking
+          with an SSL Certificate.</span
+        >
+        <span
+          class="bg-gray-800 px-8 py-2 rounded-lg text-white font-bold hover:bg-gray-700 transition-all duration-300 cursor-pointer"
+          >Secure Your Data</span
+        >
+      </div>
+    </div>
   </div>
-</div>
-  </div>
-
 </div>
