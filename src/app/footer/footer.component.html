@@ -1,0 +1,63 @@
+<section class="w-full bg-gray-800 h-auto flex flex-col">
+  <span class="w-full px-8 text-center py-4 text-white"
+    >Prices exclude applicable taxes and ICANN fees.</span
+  >
+  <hr />
+
+  <div
+    class="w-full text-white flex justify-between items-start px-8 max-md:flex-col h-auto py-10"
+  >
+    <div *ngFor="let item of items" class="flex flex-col items-start gap-4">
+      <h3 class="text-md font-bold">{{ item.tiltle }}</h3>
+      <ul>
+        <li
+          class="text-xs py-2 cursor-pointer"
+          *ngFor="let subItem of item.sub"
+        >
+          {{ subItem.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w-w-full flex justify-between items-center gap-4 px-8 mt-5 ">
+    <div class="flex justify-start items-center gap-4 text-white max-md:flex-col">
+      <div class="flex justify-center items-center">
+        <img
+          src="https://img6.wsimg.com/ux/favicon/favicon-96x96.png"
+          alt="https://img6.wsimg.com/ux/favicon/favicon-96x96.png"
+          width="80"
+          height="80"
+        />
+        <span class="text-white text-2xl font-bold">GoDaddy</span>
+      </div>
+      <span>United Arab Emirates - English</span>
+      <span>EGP EGP</span>
+    </div>
+
+    <div class="flex justify-center items-center gap-2 text-white max-md:flex-col ">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </div>
+  <hr />
+  <div class="flex justify-between items-center max-md:flex-col text-xs text-white my-5 px-4">
+    <span class="w-2/3"
+      >Copyright © 1999 - 2024 GoDaddy Operating Company, LLC. All Rights
+      Reserved. The GoDaddy word mark is a registered trademark of GoDaddy
+      Operating Company, LLC in the US and other countries. The “GO” logo is a
+      registered trademark of GoDaddy.com, LLC in the US.</span
+    >
+    <ul class="flex justify-center items-center gap-2">
+      <li>Legal</li>
+      <li>Privacy Policy</li>
+      <li>Cookies</li>
+    </ul>
+  </div>
+  <span class="text-xs text-white my-5 px-4"
+    >Use of this Site is subject to express terms of use. By using this site,
+    you signify that you agree to be bound by these Universal Terms of
+    Service.
+    </span
+  >
+</section>

@@ -1,4 +1,4 @@
-<div class="w-full flex flex-col items-center my-10">
+<div class="w-full flex flex-col items-center my-10 px-8">
   <span class="w-full text-4xl font-bold text-center"
     >Grow your brand with Websites + Marketing.</span
   >
@@ -16,24 +16,23 @@
   >
     <div
       (mouseenter)="changeServe(0)"
-      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
-      [ngClass]="{'bg-gray-200' : active === 0}"
+      class="p-4 w-1/3 flex flex-col items-start gap-3 rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{ 'bg-gray-200': active === 0 }"
     >
       <span class="text-lg font-bold"
         >Get online fast. No design skills needed.</span
       >
       <p class="text-sm">
         Build your site in minutes. Choose from 100s of beautiful,
-        mobile-friendly templates with our Website Builder, many with ecommerce
+        mobile-friendly templates with our Website Builder, many with E-commerce
         features.
       </p>
     </div>
 
     <div
       (mouseenter)="changeServe(1)"
-      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
-      [ngClass]="{'bg-gray-200' : active === 1}"
-
+      class="p-4 w-1/3 flex flex-col items-start gap-3 rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{ 'bg-gray-200': active === 1 }"
     >
       <span class="text-lg font-bold"
         >Build trust with email that matches your domain.</span
@@ -46,9 +45,8 @@
 
     <div
       (mouseenter)="changeServe(2)"
-      class="p-4 w-1/3 flex flex-col items-start gap-3  rounded-xl h-[250px] max-md:w-full cursor-pointer"
-      [ngClass]="{'bg-gray-200' : active === 2}"
-
+      class="p-4 w-1/3 flex flex-col items-start gap-3 rounded-xl h-[250px] max-md:w-full cursor-pointer"
+      [ngClass]="{ 'bg-gray-200': active === 2 }"
     >
       <span class="text-lg font-bold">Engage with marketing tools.</span>
       <p class="text-sm">
@@ -56,5 +54,17 @@
         with social media and email marketing tools.
       </p>
     </div>
+
+
+  </div>
+  <div class="container w-2/3 max-md:w-full flex justify-center items-center mt-5 ">
+    <span
+      (mouseenter)="hoverStyle()"
+      (mouseleave)="leavehoverStyle()"
+      class="px-12 py-3 bg-gray-800 flex justify-center items-center gap-2 hover:bg-gray-700 rounded-xl cursor-pointer text-white transition-all duration-300"
+    >
+      <h2> Start for Free </h2>
+      <i  [class]="hover === true ? 'fa-solid fa-arrow-right  transition-all duration-300' : 'hidden transition-all duration-300' "></i>
+    </span>
   </div>
 </div>

@@ -2,7 +2,6 @@ import { Component, Renderer2, ElementRef, OnInit, OnDestroy } from '@angular/co
 import { RouterModule } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
 import { CommonModule } from '@angular/common';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

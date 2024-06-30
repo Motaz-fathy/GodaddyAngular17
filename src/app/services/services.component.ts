@@ -11,9 +11,17 @@ import { CommonModule } from '@angular/common';
 export class ServicesComponent {
 
   active: number | 0 = 0;
-
+  hover : boolean = false ;
   changeServe(num: number): void {
     this.active = num;
+  }
+
+  hoverStyle() : void{
+    this.hover = !this.hover
+  }
+
+  leavehoverStyle() : void{
+    this.hover = !this.hover
   }
 
 }
